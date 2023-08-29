@@ -1,0 +1,76 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DA_API_DO_GOOGLE_MAPS"></script>
+    <title>Marco Zero - Recife</title>
+    <style>
+        /* Estilos específicos para o mapa */
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marco Zero - Recife</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#como-chegar">Como Chegar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Marco Zero</h2>
+            <p>O Marco Zero é um ponto turístico icônico na cidade do Recife, localizado no bairro do Recife Antigo. Ele marca o início das contagens das distâncias das rodovias federais que partem da cidade. Além disso, é um local de referência histórica e cultural, com uma vista deslumbrante para o mar e para o centro histórico da cidade.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="imagem">
+                <img src="img/marcozero1.jpg" alt="Foto do Marco Zero">
+                <p>Uma vista panorâmica do Marco Zero.</p>
+            </div>
+            <div class="imagem">
+                <img src="img/marcozero2.jpg" alt="Foto do Marco Zero">
+                <p>O Marco Zero à noite, iluminado.</p>
+            </div>
+        </section>
+
+        <main>
+            <!-- ... (código das seções) ... -->
+            
+            <section id="como-chegar">
+                <h2>Como Chegar</h2>
+                <p>O Marco Zero fica no coração do Recife Antigo e é facilmente acessível de carro, ônibus ou táxi. Também é uma área popular para caminhadas e passeios de bicicleta. Além disso, é próximo a diversos pontos turísticos e restaurantes da região.</p>
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        const marcoZero = { lat: -8.062440, lng: -34.871010 }; // Coordenadas do Marco Zero
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            center: marcoZero,
+                            zoom: 15
+                        });
+                        const marker = new google.maps.Marker({
+                            position: marcoZero,
+                            map: map,
+                            title: "Marco Zero - Recife"
+                        });
+                    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DA_API_DO_GOOGLE_MAPS&callback=initMap"></script>
+            </section>
+        </main>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Marco Zero Recife</p>
+    </footer>
+</body>
+</html>
