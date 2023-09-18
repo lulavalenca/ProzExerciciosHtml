@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recife pontos turísticos</title>
+</head>
+<body>
+    <nav class="navegador">
+        <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#historia">História</a></li>
+              <li><a href="#restaurantes">Restaurante</a></li>
+              <li><a href="#fontes">fontes</a></li>
+              <li><a href="recife.html">Recife Antigo</a></li>
+
+        </ul>
+           
+        
+    </nav>
+    
+    
+    
+        <section>
+            <h1>Recife e seus lugares incríveis!! </h1>
+
+            <figure>
+                <img src="img\marco-zero-fotos.gif" alt="">
+            </figure>
+            
+    
+    
+    
+            <p>Marco Zero(RECIFE) , Um guia pela história e cultura de  <strong>Pernambuco</strong>!! </p>
+            
+           
+        </section>
+        
+   
+    
+
+
+    <main>
+        <section>
+           
+            <p>O Marco Zero em Recife é um dos destinos históricos mais importantes do nordeste do país. A região reúne atrações históricas e culturais, centro de artesanato e ótimos restaurantes. Além disso, é o principal local do carnaval de <strong>Pernambuco</strong>, reunindo música, alegria e muita festa.</p>
+
+            <h3 id="historia">História do Marco Zero (Recife)</h3>
+           <figure>
+            <img src="img\marco-zero-recife-3.webp" alt="Imagem Marco Zero em Recife(PE)">
+           
+
+           </figure>
+
+            
+            <p>O espaço surgiu junto à construção da cidade e também é responsável por preservar grande parte da história local. Pela região, é possível apreciar construções da época do Brasil Colonial, assim como estátuas, parques e monumentos históricos.
+                Na mesma praça também está situada a rosa-dos-ventos do Marco Zero. A atração foi anexada à praça na década de 1930, pelo artista pernambucano Cícero Dias. Uma curiosidade é que o marco reúne todas as distâncias oficiais de Pernambuco, dando origem ao termo <strong>km 0</strong> do estado.
+            </p>
+
+                <p>A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no bairro do Recife da cidade homônima, capital de Pernambuco.
+
+                    O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Recife. É deste marco que são feitas todas as medidas oficiais de distâncias rodoviárias locais. Oficialmente denominada de Praça Barão do Rio Branco, fica localizada na Av. Alfredo Lisboa conectada às ruas Marquês de Olinda, Rio Branco e Barbosa Lima.</p>
+
+                    <h3 id="restaurantes">Restaurantes :</h3>
+                    <p>Em volta de toda Praça Rio Branco você encontra diversidade restaurantes que certamente agradará a todos os gostos.</p>
+                    <p>Localizado no Armazém do Porto, o restaurante <strong>Seu Boteco </strong> é um dos mais tradicionais da região. O espaço possui uma infraestrutura agradável, bom atendimento e preço acessível. Além disso, oferece pratos da culinária nacional, bebidas, quitutes e sobremesas. Um prato que você precisa provar por lá é a Feijuca, que valoriza ingredientes regionais com um sabor único.</p>
+                     <figure>
+                        <img src="img\marco-zero-recife-restarante.webp" alt="Imagem Restaurante.">
+
+                     </figure>
+                    
+        </section>
+        <h3>Curiosidade sobre Marco Zero:</h3>
+        <p>A região do Marco Zero em Recife é cheio de atrações culturais, monumentos históricos e ótimos restaurantes. Além disso, o local abriga um dos carnavais mais animados do nordeste.</p>
+        
+
+
+    </main>
+
+    <footer>
+        <section>
+            <h3 id="fontes">Fontes:</h3>
+
+            <ul>
+               <a href="https://www.bing.com/search?q=marco+zero&FORM=HDRSC1">Bing.com</a><br>
+                <a href="https://www.encontrarecife.com.br/sobre/marco-zero-recife/">Encontra Recife</a><br>
+                <a href="https://www.viajali.com.br/marco-zero-recife/">Viajali.com</a>
+              
+            </ul>
+        </section>
+            <h3>Agradecimentos :</h3>
+
+            <p> Atividade realizada para o curso PROZ-TALENTO-CLOUD turma 01. </p>
+                
+
+        
+    </footer>
+
+
+</body>
+</html>

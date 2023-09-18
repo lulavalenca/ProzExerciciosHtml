@@ -1,0 +1,17 @@
+body{
+    background: #cccccc;
+}
+
+#banner{
+    width: 100%;
+    height: 250px;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    text-align: center;   
+}
+

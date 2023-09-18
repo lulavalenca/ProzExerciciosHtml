@@ -1,0 +1,44 @@
+
+    window.handleCSSToggleButtonClick = function (event) {
+        var target = event.currentTarget;
+        var cssToggleId = target && target.dataset && target.dataset.cssToggleId;
+        var input = cssToggleId && document.getElementById(cssToggleId);
+        if (input) {
+            if (input.dataset.type === 'checkbox') {
+                input.dataset.checked = input.dataset.checked ? '' : 'checked';
+            } else {
+                input.dataset.checked = input.dataset.allowToggle && input.dataset.checked ? '' : 'checked';
+                var radios = document.querySelectorAll('[name="' + input.dataset.name + '"]');
+                for (var i = 0; i < radios.length; i++) {
+                    if (radios[i] !== input) {
+                        radios[i].dataset.checked = '';
+                    }
+                }
+            }
+        }
+    };
+    (function () {
+        var cssToggleButtons = document.querySelectorAll('[data-css-toggle-id');
+        for (var i = 0; i < cssToggleButtons.length; i++) {
+            cssToggleButtons[i].addEventListener('click', window.handleCSSToggleButtonClick);
+        }
+    })();
+
+################################ Descrição do Codigo ##########################################################
+
+Este código JavaScript cria uma função chamada `handleCSSToggleButtonClick` e configura eventos de clique para botões HTML com atributos `data-css-toggle-id`. Vou explicar o que cada parte do código faz:
+
+1. `window.handleCSSToggleButtonClick = function (event) { ... };`: Isso define uma função chamada `handleCSSToggleButtonClick` que será chamada quando um botão com um atributo `data-css-toggle-id` for clicado. A função recebe um objeto `event` como argumento para representar o evento de clique.
+
+2. Dentro da função `handleCSSToggleButtonClick`, o código faz o seguinte:
+   - Obtém o elemento HTML que acionou o evento de clique usando `event.currentTarget`.
+   - Recupera o valor do atributo `data-css-toggle-id` do elemento clicado.
+   - Procura um elemento HTML com o `id` correspondente ao valor de `cssToggleId`.
+   - Verifica se o elemento foi encontrado (`input`) e se ele possui um atributo `data-type` igual a "checkbox". Se for um elemento de tipo "checkbox", ele alterna o atributo `data-checked` entre vazio e "checked" para alternar a seleção.
+   - Se o elemento não for um "checkbox", ele verifica se o elemento possui um atributo `data-allowToggle` e se o atributo `data-checked` está presente. Se ambas as condições forem atendidas, ele alterna o atributo `data-checked` entre vazio e "checked". Além disso, ele desmarca outros botões de rádio com o mesmo `name` que o elemento clicado, se houver algum.
+
+3. `(function () { ... })();`: Isso cria uma função anônima que é executada imediatamente (conhecida como função de autoexecução ou IIFE - Immediately Invoked Function Expression). Dentro dessa função anônima, o código faz o seguinte:
+   - Seleciona todos os botões HTML que possuem um atributo `data-css-toggle-id`.
+   - Adiciona um ouvinte de evento de clique a cada um desses botões que chama a função `handleCSSToggleButtonClick` quando clicado.
+
+Em resumo, esse código JavaScript lida com a alternância de estados (geralmente, seleção/deseleção) de elementos HTML, como botões de rádio e caixas de seleção, quando botões específicos são clicados. Ele é projetado para ser usado com elementos HTML que tenham atributos personalizados, como `data-css-toggle-id`, `data-type`, `data-checked`, `data-allowToggle`, e `data-name`. Quando os botões são clicados, a função `handleCSSToggleButtonClick` é chamada para alternar os estados dos elementos correspondentes.
